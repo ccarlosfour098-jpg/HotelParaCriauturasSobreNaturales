@@ -6,564 +6,321 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Habitaciones | Nocturne Sanctuary</title>
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #100b0e;
-            color: #e9e2d8;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* ENCABEZADO */
-
-        header {
-            background-color: #17131a;
-            border-bottom: 1px solid #3a3035;
-            padding: 18px 5%;
-        }
-
-        .barra {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            color: #c9a95b;
-            font-family: Georgia, serif;
-            font-size: 22px;
-            letter-spacing: 2px;
-        }
-
-        nav a {
-            color: #bdb5ae;
-            text-decoration: none;
-            margin-left: 18px;
-            font-size: 13px;
-        }
-
-        nav a:hover {
-            color: #c9a95b;
-        }
-
-        /* PORTADA */
-
-        .portada {
-            padding: 50px 8%;
-            background: linear-gradient(
-                90deg,
-                rgba(16, 11, 14, 0.98),
-                rgba(16, 11, 14, 0.75)
-            );
-        }
-
-        .portada p {
-            color: #b89a58;
-            font-size: 13px;
-            letter-spacing: 2px;
-            margin-bottom: 10px;
-        }
-
-        .portada h1 {
-            font-family: Georgia, serif;
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .portada span {
-            color: #bdb5ae;
-            max-width: 650px;
-            display: block;
-            line-height: 1.6;
-        }
-
-        /* CONTENIDO */
-
-        .contenido {
-            width: 85%;
-            margin: 40px auto;
-        }
-
-        .habitacion-principal {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 25px;
-            background-color: #18131a;
-            padding: 20px;
-            border: 1px solid #332a30;
-        }
-
-        .imagen-principal img {
-            width: 100%;
-            height: 420px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .info-habitacion {
-            padding: 15px;
-        }
-
-        .info-habitacion h2 {
-            font-family: Georgia, serif;
-            font-size: 28px;
-            margin-bottom: 15px;
-            color: #d6b86b;
-        }
-
-        .info-habitacion p {
-            color: #bdb5ae;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .precio {
-            font-size: 26px;
-            color: #d6b86b;
-            margin-bottom: 20px;
-        }
-
-        .boton {
-            display: inline-block;
-            background-color: #c6a24e;
-            color: #17131a;
-            padding: 12px 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .boton:hover {
-            background-color: #e0c270;
-        }
-
-        /* SERVICIOS */
-
-        .servicios {
-            margin-top: 45px;
-        }
-
-        .servicios h2 {
-            font-family: Georgia, serif;
-            margin-bottom: 25px;
-            color: #d6b86b;
-        }
-
-        .lista-servicios {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-        }
-
-        .servicio {
-            background-color: #18131a;
-            border: 1px solid #332a30;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .servicio h3 {
-            color: #c9a95b;
-            margin-bottom: 8px;
-        }
-
-        .servicio p {
-            color: #aaa19a;
-            font-size: 13px;
-        }
-
-        /* OTRAS HABITACIONES */
-
-        .otras-habitaciones {
-            margin-top: 50px;
-        }
-
-        .otras-habitaciones h2 {
-            font-family: Georgia, serif;
-            color: #d6b86b;
-            margin-bottom: 25px;
-        }
-
-        .tarjetas {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .tarjeta {
-            background-color: #18131a;
-            border: 1px solid #332a30;
-        }
-
-        .tarjeta img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .tarjeta-info {
-            padding: 18px;
-        }
-
-        .tarjeta-info h3 {
-            font-family: Georgia, serif;
-            color: #d6b86b;
-            margin-bottom: 10px;
-        }
-
-        .tarjeta-info p {
-            color: #aaa19a;
-            font-size: 14px;
-            margin-bottom: 15px;
-            line-height: 1.5;
-        }
-
-        .precio-pequeno {
-            color: #c9a95b;
-            margin-bottom: 15px;
-        }
-
-        /* PIE DE PAGINA */
-
-        footer {
-            margin-top: 60px;
-            background-color: #0c090b;
-            border-top: 1px solid #332a30;
-            padding: 40px 8%;
-        }
-
-        .footer-contenido {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .footer-contenido h3 {
-            color: #c9a95b;
-            font-family: Georgia, serif;
-            margin-bottom: 12px;
-        }
-
-        .footer-contenido p {
-            color: #89817b;
-            font-size: 13px;
-            line-height: 1.6;
-        }
-
-        .copyright {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #292126;
-            text-align: center;
-            color: #625b57;
-            font-size: 12px;
-        }
-
-        /* RESPONSIVE */
-
-        @media (max-width: 900px) {
-
-            .habitacion-principal {
-                grid-template-columns: 1fr;
-            }
-
-            .lista-servicios {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .tarjetas {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-        @media (max-width: 600px) {
-
-            nav {
-                display: none;
-            }
-
-            .portada h1 {
-                font-size: 30px;
-            }
-
-            .lista-servicios {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-contenido {
-                grid-template-columns: 1fr;
-            }
-
-        }
-
-    </style>
-
 </head>
 
 <body>
 
+    <!-- ENCABEZADO PRINCIPAL -->
+
     <header>
 
-        <div class="barra">
+        <h1>NOCTURNE SANCTUARY</h1>
 
-            <div class="logo">
-                NOCTURNE SANCTUARY
-            </div>
+        <!-- Menú de navegación -->
 
-            <nav>
-                <a href="../../index.html">Inicio</a>
-                <a href="#">Habitaciones</a>
-                <a href="../Restaurante.html">Restaurante</a>
-                <a href="../EventosInternos.html">Eventos</a>
-            </nav>
+        <nav>
+            <a href="../../index.html">Inicio</a>
+            <a href="Habitaciones.html">Habitaciones</a>
+            <a href="../Restaurante.html">Restaurante</a>
+            <a href="../../EventosInternos.html">Eventos</a>
+            <a href="#">Privacidad</a>
+        </nav>
 
-        </div>
+        <button type="button">Reservar Santuario</button>
 
     </header>
 
 
-    <section class="portada">
+    <main>
 
-        <p>RESIDENCIAS PARA CRIATURAS SOBRENATURALES</p>
+        <!-- PRESENTACIÓN PRINCIPAL DE LA PÁGINA -->
 
-        <h1>Cámaras de Linaje & Residencia Eterna</h1>
+        <section>
 
-        <span>
-            Descubre habitaciones diseñadas para criaturas que buscan descanso,
-            privacidad y una experiencia fuera de lo ordinario.
-        </span>
+            <p>PROTOCOLO DE ACOGIDA IMPERIAL</p>
 
-    </section>
+            <h2>Cámaras de Linaje & Suites Sobrenaturales</h2>
 
+            <p>
+                Acondicionamiento selectivo, barreras ancestrales y resguardo
+                arcano personalizado para cada criatura nocturna.
+            </p>
 
-    <main class="contenido">
-
-        <section class="habitacion-principal">
-
-            <div class="imagen-principal">
-
-                <img src="../Imagenes/imagen1.png"
-                     alt="Habitación sobrenatural">
-
-            </div>
+        </section>
 
 
-            <div class="info-habitacion">
+        <!-- BOTONES PARA ORGANIZAR LAS HABITACIONES -->
 
-                <h2>Cripta Imperial de las Dinastías</h2>
+        <section>
+
+            <button type="button">Todas</button>
+            <button type="button">Vampiros & Sangre Antigua</button>
+            <button type="button">Licántropos & Clanes Lunares</button>
+            <button type="button">Fantasmales & Espectros</button>
+            <button type="button">Criaturas Acuáticas</button>
+
+        </section>
+
+
+        <!-- HABITACIONES DESTACADAS -->
+
+        <section>
+
+            <!-- Primera habitación -->
+
+            <article>
+
+                <img src="../Imagenes/habitacion1.png"
+                    alt="Habitación Cripta Imperial Obsidiana">
+
+                <p>SUITE IMPERIAL</p>
+
+                <h2>Cripta Imperial Obsidiana</h2>
 
                 <p>
-                    Una habitación creada para huéspedes que buscan tranquilidad,
-                    oscuridad y comodidad en un ambiente completamente sobrenatural.
+                    Una residencia ceremonial diseñada para huéspedes que buscan
+                    privacidad absoluta, protección sobrenatural y una estancia
+                    exclusiva dentro del santuario.
                 </p>
+
+                <p>Capacidad: 4 huéspedes</p>
+
+                <p>Ambiente: Oscuro y ceremonial</p>
+
+                <p>Desde $450.000 por noche</p>
+
+                <button type="button">Reservar Cámara</button>
+
+            </article>
+
+
+            <!-- Segunda habitación -->
+
+            <article>
+
+                <img src="../Imagenes/habitacion2.png"
+                    alt="Habitación Penthouse Luna Llena">
+
+                <p>SUITE SUPERIOR</p>
+
+                <h2>Penthouse Luna Llena</h2>
 
                 <p>
-                    Incluye aislamiento mágico, protección nocturna y acceso
-                    a servicios especiales del hotel.
+                    Una residencia elevada con vistas hacia la noche, espacios
+                    amplios y una atmósfera diseñada para huéspedes que buscan
+                    privacidad absoluta.
                 </p>
 
-                <div class="precio">
-                    Desde $450.000
-                </div>
+                <p>Capacidad: 3 huéspedes</p>
 
-                <a href="#" class="boton">
-                    Reservar habitación
-                </a>
+                <p>Vista: Luna y montañas</p>
 
-            </div>
+                <p>Ambiente: Privado y exclusivo</p>
 
-        </section>
+                <p>Desde $320.000 por noche</p>
 
+                <button type="button">Reservar Cámara</button>
 
-        <section class="servicios">
-
-            <h2>Servicios incluidos</h2>
-
-            <div class="lista-servicios">
-
-                <div class="servicio">
-                    <h3>🌙</h3>
-                    <p>Ambiente nocturno permanente</p>
-                </div>
-
-                <div class="servicio">
-                    <h3>🛡️</h3>
-                    <p>Protección sobrenatural</p>
-                </div>
-
-                <div class="servicio">
-                    <h3>🔮</h3>
-                    <p>Servicios mágicos especiales</p>
-                </div>
-
-                <div class="servicio">
-                    <h3>🔑</h3>
-                    <p>Acceso privado y seguro</p>
-                </div>
-
-            </div>
+            </article>
 
         </section>
 
 
-        <section class="otras-habitaciones">
+        <!-- OTRAS HABITACIONES DISPONIBLES -->
 
-            <h2>Otras opciones de espacio</h2>
+        <section>
 
-            <div class="tarjetas">
-
-
-                <article class="tarjeta">
-
-                    <img src="../Imagenes/imagen2.png"
-                         alt="Penthouse sobrenatural">
-
-                    <div class="tarjeta-info">
-
-                        <h3>Penthouse Refugio Lunar</h3>
-
-                        <p>
-                            Espacio reservado para criaturas que prefieren
-                            observar la noche desde las alturas.
-                        </p>
-
-                        <div class="precio-pequeno">
-                            Desde $380.000
-                        </div>
-
-                        <a href="#" class="boton">
-                            Seleccionar
-                        </a>
-
-                    </div>
-
-                </article>
+            <h2>OTRAS CÁMARAS DEL SANTUARIO</h2>
 
 
-                <article class="tarjeta">
+            <!-- Tercera habitación -->
 
-                    <img src="../Imagenes/imagen3.png"
-                         alt="Pabellón sobrenatural">
+            <article>
 
-                    <div class="tarjeta-info">
+                <img src="../Imagenes/habitacion3.png"
+                    alt="Habitación Cámara de la Bruma Perpetua">
 
-                        <h3>Pabellón de la Niebla</h3>
+                <p>RESIDENCIA ESPECIAL</p>
 
-                        <p>
-                            Una residencia cubierta por misterio,
-                            ideal para huéspedes que valoran la privacidad.
-                        </p>
+                <h3>Cámara de la Bruma Perpetua</h3>
 
-                        <div class="precio-pequeno">
-                            Desde $320.000
-                        </div>
+                <p>
+                    Una habitación rodeada de misterio y silencio, creada para
+                    huéspedes que buscan descansar lejos de la actividad del santuario.
+                </p>
 
-                        <a href="#" class="boton">
-                            Seleccionar
-                        </a>
+                <p>Capacidad: 2 huéspedes</p>
 
-                    </div>
+                <p>Desde $220.000 por noche</p>
 
-                </article>
+                <button type="button">Reservar</button>
+
+            </article>
 
 
-                <article class="tarjeta">
+            <!-- Cuarta habitación -->
 
-                    <img src="../Imagenes/imagen4.png"
-                         alt="Suite sobrenatural">
+            <article>
 
-                    <div class="tarjeta-info">
+                <img src="../Imagenes/habitacion4.png"
+                    alt="Habitación Lágrima del Mar Negro">
 
-                        <h3>Cripta de los Abismos</h3>
+                <p>RESIDENCIA ACUÁTICA</p>
 
-                        <p>
-                            Una experiencia única para huéspedes que buscan
-                            una estancia completamente fuera de lo común.
-                        </p>
+                <h3>Lágrima del Mar Negro</h3>
 
-                        <div class="precio-pequeno">
-                            Desde $410.000
-                        </div>
+                <p>
+                    Una estancia inspirada en las profundidades del océano, con
+                    espacios acuáticos, arquitectura ancestral y una conexión
+                    directa con los misterios del mar.
+                </p>
 
-                        <a href="#" class="boton">
-                            Seleccionar
-                        </a>
+                <p>Capacidad: 2 huéspedes</p>
 
-                    </div>
+                <p>Desde $280.000 por noche</p>
 
-                </article>
+                <button type="button">Reservar</button>
+
+            </article>
 
 
-            </div>
+            <!-- Quinta habitación -->
+
+            <article>
+
+                <img src="../Imagenes/habitacion5.png"
+                    alt="Habitación Atelier de Alquimia y Pócimas">
+
+                <p>ESTANCIA ARCANA</p>
+
+                <h3>Atelier de Alquimia & Pócimas</h3>
+
+                <p>
+                    Un espacio creado para amantes del conocimiento oculto, la
+                    alquimia y los rituales nocturnos, rodeado de libros,
+                    plantas y elementos mágicos.
+                </p>
+
+                <p>Capacidad: 2 huéspedes</p>
+
+                <p>Desde $240.000 por noche</p>
+
+                <button type="button">Reservar</button>
+
+            </article>
 
         </section>
+
+
+        <!-- SERVICIOS DEL SANTUARIO -->
+
+        <section>
+
+            <p>SERVICIOS EXCLUSIVOS</p>
+
+            <h2>Beneficios de una Estancia Nocturna</h2>
+
+            <p>
+                Cada huésped del Nocturne Sanctuary puede disfrutar de servicios
+                especiales diseñados para garantizar comodidad, privacidad y seguridad.
+            </p>
+
+
+            <!-- Primer servicio -->
+
+            <article>
+
+                <h3>Alimentación Especial</h3>
+
+                <p>
+                    Servicio preparado según las necesidades de cada criatura
+                    y sus características sobrenaturales.
+                </p>
+
+                <ul>
+                    <li>Servicio nocturno privado</li>
+                    <li>Alimentación especializada</li>
+                    <li>Bebidas exclusivas del santuario</li>
+                </ul>
+
+            </article>
+
+
+            <!-- Segundo servicio -->
+
+            <article>
+
+                <h3>Protección Nocturna</h3>
+
+                <p>
+                    El santuario cuenta con diferentes medidas de protección
+                    para garantizar una estancia segura.
+                </p>
+
+                <ul>
+                    <li>Resguardo durante la noche</li>
+                    <li>Protección de las instalaciones</li>
+                    <li>Privacidad para cada huésped</li>
+                </ul>
+
+            </article>
+
+
+            <!-- Tercer servicio -->
+
+            <article>
+
+                <h3>Atención Personalizada</h3>
+
+                <p>
+                    Nuestro personal está disponible para atender las necesidades
+                    especiales de los huéspedes durante su estancia.
+                </p>
+
+                <ul>
+                    <li>Atención privada</li>
+                    <li>Servicio especial por habitación</li>
+                    <li>Asistencia durante eventos internos</li>
+                </ul>
+
+            </article>
+
+        </section>
+
 
     </main>
 
 
+    <!-- PIE DE PÁGINA -->
+
     <footer>
 
-        <div class="footer-contenido">
+        <h2>NOCTURNE SANCTUARY</h2>
 
-            <div>
-
-                <h3>NOCTURNE SANCTUARY</h3>
-
-                <p>
-                    Un hotel diseñado para ofrecer seguridad, privacidad
-                    y comodidad a criaturas sobrenaturales.
-                </p>
-
-            </div>
+        <p>
+            Un refugio diseñado para criaturas sobrenaturales que buscan
+            seguridad, privacidad y experiencias fuera de lo común.
+        </p>
 
 
-            <div>
+        <!-- Enlaces del pie de página -->
 
-                <h3>Estándares</h3>
+        <nav>
 
-                <p>
-                    Pacto de silencio y privacidad.
-                </p>
+            <a href="#">Política de Privacidad</a>
+            <a href="#">Condiciones de Reserva</a>
+            <a href="#">Garantía Cero Lux</a>
+            <a href="#">Servicio de la Orden</a>
+            <a href="#">Contacto</a>
 
-                <p>
-                    Certificación de seguridad sobrenatural.
-                </p>
+        </nav>
 
-            </div>
-
-
-            <div>
-
-                <h3>Servicios de la Orden</h3>
-
-                <p>
-                    Atención nocturna permanente.
-                </p>
-
-                <p>
-                    Concierge especializado.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            © 2026 Nocturne Sanctuary. Todos los derechos reservados.
-
-        </div>
+        <p>
+            Nocturne Sanctuary. Todos los derechos reservados.
+        </p>
 
     </footer>
+
 
 </body>
 
