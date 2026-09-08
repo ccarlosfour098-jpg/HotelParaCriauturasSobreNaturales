@@ -1,0 +1,15 @@
+body {
+  background-color: var(--fondo-principal);
+  color: var(--texto-principal);
+  
+  /* Espacio interno para que el contenido no pegue a los bordes */
+  padding: 20px;
+  
+  /* Tipografía elegante para un ambiente gótico */
+  font-family: 'Georgia', serif;
+}
+
+a {
+  color: var(--color-enlace);
+  text-decoration: none; /* Quita el subrayado */
+}
