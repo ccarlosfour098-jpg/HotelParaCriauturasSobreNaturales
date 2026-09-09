@@ -1,0 +1,95 @@
+/* ==========================================
+   ESTRUCTURA GENERAL Y CENTRADO
+   ========================================== */
+
+/* Contenedor principal: da espacio superior para no chocar con el menú y centra el bloque */
+main {
+  max-width: 900px;
+  margin: 120px auto 40px auto; /* 120px arriba empuja todo para dar respiro */
+  padding: 0 20px;
+}
+
+/* Centrado del título principal */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f0e6ff;
+  margin-bottom: 5px;
+  text-shadow: 0 0 10px rgba(138, 43, 226, 0.7);
+  font-family: 'Georgia', serif;
+}
+
+/* Centrado del subtítulo ("El Refugio Eterno...") */
+h1 + p {
+  text-align: center;
+  font-style: italic;
+  color: #d1c4e9;
+  margin-bottom: 35px;
+}
+
+/* ==========================================
+   ESTILO DE TARJETAS PARA EL CONTENIDO
+   ========================================== */
+
+/* Convierte cada sección en una tarjeta gótica transparente */
+main article, 
+main section {
+  background-color: rgba(15, 10, 25, 0.82); /* Fondo oscuro semitransparente */
+  border: 1px solid rgba(186, 85, 211, 0.3); /* Borde morado sutil */
+  border-left: 4px solid #8a2be2; /* Detalle de línea gruesa a la izquierda */
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(4px); /* Desenfoca ligeramente el fondo detrás del texto */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Títulos principales dentro de las tarjetas */
+main h2, 
+main h3 {
+  color: #e0d5f5; /* Blanco gótico / violeta claro */
+  margin-bottom: 12px;
+  font-family: 'Georgia', serif;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.6); /* Brillo neón suave */
+}
+
+/* Párrafos e información dentro de tarjetas */
+main p {
+  color: #c8c0d8; /* Gris claro para lectura descansada */
+  line-height: 1.6;
+}
+
+/* Listas dentro de las secciones (Certificaciones y Seguridad) */
+main section ul {
+  padding-left: 20px;
+  color: #c8c0d8;
+}
+
+main section ul li {
+  margin-bottom: 8px;
+}
+
+/* ==========================================
+   ESTILO DEL BOTÓN DE RESERVACIÓN
+   ========================================== */
+
+input[type="submit"], 
+button, 
+a[href*="reservacion"] {
+  background: linear-gradient(135deg, #4b0082, #8a2be2); /* Degradado místico */
+  color: #ffffff;
+  border: 1px solid #ba55d3;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(138, 43, 226, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover, 
+button:hover,
+a[href*="reservacion"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(186, 85, 211, 0.8);
+}

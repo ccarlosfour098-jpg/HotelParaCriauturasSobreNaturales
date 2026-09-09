@@ -1,4 +1,5 @@
 body {
+  
   background-color: var(--fondo-principal);
   color: var(--texto-principal);
   
@@ -12,4 +13,63 @@ body {
 a {
   color: var(--color-enlace);
   text-decoration: none; /* Quita el subrayado */
+}
+
+/* Empuja todo el contenido hacia abajo para que el menú no tape nada */
+main, body {
+  padding-top: 80px; 
+}
+
+/* Ocultar el título "Servicios" ya que los botones hablan por sí solos */
+article:first-of-type h3 {
+  display: none;
+}
+
+/* Empuja todo el contenido hacia abajo para liberar espacio del menú superior */
+main {
+  margin-top: 80px;
+  max-width: 900px; /* Limita el ancho para que no se extienda por toda la pantalla */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  
+  /* Fondo oscuro transparente con desenfoque sobre la foto */
+  background-color: rgba(10, 5, 18, 0.85); 
+  border: 1px solid rgba(138, 43, 226, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+/* Espaciado interno para separar los títulos y textos */
+article, section {
+  margin-bottom: 25px;
+}
+
+/* Estilo para los títulos */
+h1, h2, h3 {
+  color: #f0e6ff;
+  margin-bottom: 8px;
+}
+
+/* Estilo para los textos de párrafos */
+p {
+  color: #d1c4e9;
+  line-height: 1.5;
+}
+
+/* Estilo destacado para el botón de reservación */
+input[type="submit"], 
+button, 
+a[href*="reservacion"] {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--color-enlace);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--color-enlace);
 }

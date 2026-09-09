@@ -1,16 +1,7 @@
 :root {
- 
-  --fondo-principal: #0a0a0c;
-  --fondo-secundario: #141418;
-  --texto-principal: #d4d4d8;
-
-
-  --rojo-sangre: #8b0000;
-  --dorado-antiguo: #b89758;
-
-
-  --fuente-principal: sans-serif;
-
-  --color-enlace: #a855f7;
-
+  --fondo-principal: #222225;
+  --texto-principal: #e6e1f0;
+  --color-enlace: #9b51e0;
+  --color-dorado-gotico: #d4af37;
+  --borde-tarjeta: rgba(155, 81, 224, 0.3);
 }
