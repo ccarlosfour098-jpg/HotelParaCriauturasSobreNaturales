@@ -1,0 +1,45 @@
+footer {
+  max-width: 1200px;         
+  margin: 60px auto 30px auto;
+  padding: 30px 20px;
+  text-align: center;         
+  border-top: 1px solid rgba(138, 43, 226, 0.3); /* Línea divisora arriba */
+}
+
+footer h3 {
+  color: #f0e6ff;
+  font-size: 1.1rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px rgba(138, 43, 226, 0.5);
+}
+
+
+footer ul {
+  list-style: none;          /* Quita las viñetas */
+  padding: 0;
+  margin: 0 0 25px 0;
+  display: flex;
+  justify-content: center;   /* Centra la lista horizontalmente */
+  flex-wrap: wrap;           /* Permite acomodarse si la pantalla es pequeña */
+  gap: 20px;                 /* Espacio entre cada enlace */
+}
+
+footer ul li a {
+  color: var(--color-enlace);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px var(--color-enlace);
+}
+
+/* Texto de derechos / leyenda al final */
+footer p {
+  font-size: 0.8rem;
+  color: #9a8cbf;
+  margin-top: 15px;
+  font-style: italic;
+}
