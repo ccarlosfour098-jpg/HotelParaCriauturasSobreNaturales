@@ -12,44 +12,25 @@
 
 <body>
 
-    <!-- esta es navegación principal -->
+    <!-- Navegación principal -->
     <header class="encabezado-principal">
 
-<h1>Hotel Transilvania</h1>
+        <h1>Hotel Transilvania</h1>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="Habitaciones.html">Habitaciones</a>
-            </li>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Inicio</a> </li>
+                <li> <a href="Restaurante.html">Restaurante gourmet</a> </li>
+                <li> <a href="ZonaPublica.html">Zonas públicas</a> </li>
+                <li> <a href="EventosInternos.html">Eventos y fiestas</a> </li>
+            </ul>
+        </nav>
 
-            <li>
-                <a href="Restaurante.html">Restaurante gourmet</a>
-            </li>
+    </header>
 
-            <li>
-                <a href="ZonaPublica.html">Zonas públicas</a>
-            </li>
+    <main class="main-habitaciones">
 
-            <li>
-                <a href="EventosInternos.html">Eventos y fiestas</a>
-            </li>
-        </ul>
-    </nav>
-
-    <a href="../Autenticacion/LoginAccesoAlSantuario.html">
-        Iniciar sesión
-    </a>
-
-    <button type="button">
-        Solicita tu reservación
-    </button>
-
-</header>
-
-    <main>
-
-        <!-- aqui va la pequeña presentación de las habitaciones -->
+        <!-- Presentación de las habitaciones -->
         <section class="presentacion-habitaciones">
 
             <p>HOSPEDAJE PARA CRIATURAS SOBRENATURALES</p>
@@ -66,173 +47,139 @@
 
             <div class="botones-presentacion">
 
-                <a class="boton-ver-habitaciones" href="#habitaciones">
-                    Ver habitaciones
-                </a>
-
-                <a class="boton-reservar" href="#reserva">
-                    Reservar ahora
-                </a>
+                <a class="boton-reservar" href="#reserva"> Reservar ahora </a>
 
             </div>
 
         </section>
 
 
-        <!--  sesion habitaciones disponibles -->
+        <!-- Sección habitaciones disponibles -->
         <section id="habitaciones" class="seccion-habitaciones">
 
             <h2>Cámaras y Refugios Sobrenaturales</h2>
 
-            <p>
-                Espacios acondicionados con magia y confort para cada huésped.
-            </p>
-
+            <p> Espacios acondicionados con magia y confort para cada huésped. </p>
 
             <div class="contenedor-habitaciones">
 
-
-                <!-- habitacion para vampiros -->
+                <!-- 1. Habitación para vampiros -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_vampirica.png" alt="Cripta Vampírica">
 
-                    <img src="../../Imagenes/habitacion_vampirica.png"
-                        alt="Cripta Vampírica">
-
-                    <h3>Cripta Vampírica</h3>
-
-                    <p>
-                        Cama elegante, velas, cortinas rojas y un ataúd
-                        decorativo para una estancia digna de un verdadero vampiro.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $450.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Cripta Vampírica</h3>
+                        <p>
+                            Cama elegante, velas, cortinas rojas y un ataúd
+                            decorativo para una estancia digna de un verdadero vampiro.
+                        </p>
+                        <p class="precio-habitacion">
+                            $450.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
 
-                <!-- habitación para fantasmas -->
+                <!-- 2. Habitación para fantasmas -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_espectral.png" alt="Suite Espectral">
 
-                    <img src="../../Imagenes/habitacion_espectral.png"
-                        alt="Suite Espectral">
-
-                    <h3>Suite Espectral</h3>
-
-                    <p>
-                        Niebla azul-violeta, muebles antiguos y luces etéreas
-                        para huéspedes del mundo espiritual.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $380.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Suite Espectral</h3>
+                        <p>
+                            Niebla azul-violeta, muebles antiguos y luces etéreas
+                            para huéspedes del mundo espiritual.
+                        </p>
+                        <p class="precio-habitacion">
+                            $380.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
 
-                <!-- habitacion para hombres lobo -->
+                <!-- 3. Habitación para hombres lobo -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_hombre_lobo.png" alt="Refugio para hombres lobo">
 
-                    <img src="../../Imagenes/habitacion_hombre_lobo.png"
-                        alt="Refugio para hombres lobo">
-
-                    <h3>Refugio Licántropo</h3>
-
-                    <p>
-                        Espacio de piedra y madera inspirado en el bosque,
-                        preparado para disfrutar de las noches de luna llena.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $420.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Refugio Licántropo</h3>
+                        <p>
+                            Espacio de piedra y madera inspirado en el bosque,
+                            preparado para disfrutar de las noches de luna llena.
+                        </p>
+                        <p class="precio-habitacion">
+                            $420.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
 
-                <!-- habitacion para sirenas -->
+                <!-- 4. Habitación para sirenas -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_sirena.png" alt="Cámara para criaturas acuáticas">
 
-                    <img src="../../Imagenes/habitacion_sirena.png"
-                        alt="Cámara para criaturas acuáticas">
-
-                    <h3>Cámara Abisal</h3>
-
-                    <p>
-                        Ambiente inspirado en las profundidades del océano,
-                        con agua y detalles marinos para criaturas acuáticas.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $500.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Cámara Abisal</h3>
+                        <p>
+                            Ambiente inspirado en las profundidades del océano,
+                            con agua y detalles marinos para criaturas acuáticas.
+                        </p>
+                        <p class="precio-habitacion">
+                            $500.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
 
-                <!-- habitacion para brujas y alquimistas -->
+                <!-- 5. Habitación para brujas y alquimistas -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_bruja.png" alt="Santuario para brujas y alquimistas">
 
-                    <img src="../../Imagenes/habitacion_bruja.png"
-                        alt="Santuario para brujas y alquimistas">
-
-                    <h3>Santuario Arcano</h3>
-
-                    <p>
-                        Biblioteca, símbolos mágicos y pociones para brujas
-                        y alquimistas que buscan un refugio lleno de conocimiento.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $470.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Santuario Arcano</h3>
+                        <p>
+                            Biblioteca, símbolos mágicos y pociones para brujas
+                            y alquimistas que buscan un refugio lleno de conocimiento.
+                        </p>
+                        <p class="precio-habitacion">
+                            $470.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
 
-                <!--  habitacion para criaturas de hielo -->
+                <!-- 6. Habitación para criaturas de hielo -->
                 <article class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion_hielo.png" alt="Refugio Glacial">
 
-                    <img src="../../Imagenes/habitacion_hielo.png"
-                        alt="Refugio Glacial">
-
-                    <h3>Refugio Glacial</h3>
-
-                    <p>
-                        Espacio construido con hielo y piedra, acompañado de
-                        una tenue iluminación azul para criaturas de frío.
-                    </p>
-
-                    <p class="precio-habitacion">
-                        $520.000 por noche
-                    </p>
-
-                    <a class="boton-ver-habitacion" href="#reserva">
-                        Ver habitación
-                    </a>
-
+                    <div class="info-habitacion">
+                        <h3>Refugio Glacial</h3>
+                        <p>
+                            Espacio construido con hielo y piedra, acompañado de
+                            una tenue iluminación azul para criaturas de frío.
+                        </p>
+                        <p class="precio-habitacion">
+                            $520.000 por noche
+                        </p>
+                        <a class="boton-ver-habitacion" href="#reserva">
+                            Ver habitación
+                        </a>
+                    </div>
                 </article>
 
             </div>
@@ -240,7 +187,7 @@
         </section>
 
 
-        <!-- sesion servicios y garantías -->
+        <!-- Sección servicios y garantías -->
         <section class="seccion-servicios">
 
             <h2>Servicios y Garantías</h2>
@@ -248,50 +195,35 @@
             <div class="contenedor-servicios">
 
                 <article class="tarjeta-servicio">
-
                     <h3>Privacidad absoluta</h3>
-
                     <p>
                         Registro confidencial y acceso restringido para proteger
                         la identidad y el descanso de cada huésped.
                     </p>
-
                 </article>
 
-
                 <article class="tarjeta-servicio">
-
                     <h3>Protección arcana y plata cero</h3>
-
                     <p>
                         Sellos mágicos de seguridad y habitaciones libres de plata
                         para reducir riesgos durante la estancia.
                     </p>
-
                 </article>
 
-
                 <article class="tarjeta-servicio">
-
                     <h3>Servicio nocturno 24 horas</h3>
-
                     <p>
                         Atención disponible durante toda la noche para solicitudes,
                         emergencias y acompañamiento.
                     </p>
-
                 </article>
 
-
                 <article class="tarjeta-servicio">
-
                     <h3>Temperatura personalizada</h3>
-
                     <p>
                         Ambiente adaptado con frío, humedad, oscuridad o calefacción
                         según las necesidades de cada criatura.
                     </p>
-
                 </article>
 
             </div>
@@ -299,7 +231,7 @@
         </section>
 
 
-        <!-- formulario de reserva -->
+        <!-- Formulario de reserva -->
         <section id="reserva" class="seccion-reserva">
 
             <h2>Reservar habitación</h2>
@@ -307,121 +239,43 @@
             <form class="formulario-reserva">
 
                 <div class="campo-formulario">
-
-                    <label for="nombre">
-                        Nombre del huésped o clan
-                    </label>
-
-                    <input type="text"
-                        id="nombre"
-                        name="nombre"
-                        required>
-
+                    <label for="nombre">Nombre del huésped o clan</label>
+                    <input type="text" id="nombre" name="nombre" required>
                 </div>
 
-
                 <div class="campo-formulario">
-
-                    <label for="criatura">
-                        Tipo de criatura
-                    </label>
-
-                    <select id="criatura"
-                            name="criatura"
-                            required>
-
-                        <option value="">
-                            Selecciona una criatura
-                        </option>
-
-                        <option value="vampiro">
-                            Vampiro
-                        </option>
-
-                        <option value="espectro">
-                            Espectro
-                        </option>
-
-                        <option value="licantropo">
-                            Licántropo
-                        </option>
-
-                        <option value="sirena">
-                            Sirena
-                        </option>
-
-                        <option value="bruja">
-                            Bruja
-                        </option>
-
-                        <option value="alquimista">
-                            Alquimista
-                        </option>
-
-                        <option value="criatura-hielo">
-                            Criatura de hielo
-                        </option>
-
+                    <label for="criatura">Tipo de criatura</label>
+                    <select id="criatura" name="criatura" required>
+                        <option value="">Selecciona una criatura</option>
+                        <option value="vampiro">Vampiro</option>
+                        <option value="espectro">Espectro</option>
+                        <option value="licantropo">Licántropo</option>
+                        <option value="sirena">Sirena</option>
+                        <option value="bruja">Bruja</option>
+                        <option value="alquimista">Alquimista</option>
+                        <option value="criatura-hielo">Criatura de hielo</option>
                     </select>
-
                 </div>
-
 
                 <div class="campo-formulario">
-
-                    <label for="llegada">
-                        Fecha de llegada
-                    </label>
-
-                    <input type="date"
-                        id="llegada"
-                        name="llegada"
-                        required>
-
+                    <label for="llegada">Fecha de llegada</label>
+                    <input type="date" id="llegada" name="llegada" required>
                 </div>
-
 
                 <div class="campo-formulario">
-
-                    <label for="salida">
-                        Fecha de salida
-                    </label>
-
-                    <input type="date"
-                        id="salida"
-                        name="salida"
-                        required>
-
+                    <label for="salida">Fecha de salida</label>
+                    <input type="date" id="salida" name="salida" required>
                 </div>
-
 
                 <div class="campo-formulario">
-
-                    <label for="huespedes">
-                        Número de huéspedes
-                    </label>
-
-                    <input type="number"
-                        id="huespedes"
-                        name="huespedes"
-                        min="1"
-                        required>
-
+                    <label for="huespedes">Número de huéspedes</label>
+                    <input type="number" id="huespedes" name="huespedes" min="1" required>
                 </div>
-
 
                 <div class="campo-formulario">
-
-                    <label for="peticiones">
-                        Peticiones especiales
-                    </label>
-
-                    <textarea id="peticiones"
-                            name="peticiones"
-                            rows="5"></textarea>
-
+                    <label for="peticiones">Peticiones especiales</label>
+                    <textarea id="peticiones" name="peticiones" rows="5"></textarea>
                 </div>
-
 
                 <button class="boton-confirmar-reserva" type="submit">
                     Confirmar reserva
@@ -434,26 +288,26 @@
     </main>
 
 
-    <!-- pie de página -->
+    <!-- Pie de página -->
     <footer>
 
-    <h3>Hotel Transilvania</h3>
+        <h3>Hotel Transilvania</h3>
 
-    <p>Un refugio para cada criatura</p>
+        <p>Un refugio para cada criatura</p>
 
-    <p>Creado por sus fundadores:</p>
+        <p>Creado por sus fundadores:</p>
 
-    <p> Carlos David Caicedo ·Indira Valencia · Yeferson Andrés Zemanate </p>
+        <p>Carlos David Caicedo · Indira Valencia · Yeferson Andrés Zemanate</p>
 
-    <nav>
-        <a href="#">Contacto</a>
-        <a href="#">Privacidad</a>
-        <a href="#">Términos</a>
-    </nav>
+        <nav>
+            <a href="#">Contacto</a>
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+        </nav>
 
-    <p>© 2026 Hotel Transilvania</p>
+        <p>© 2026 Hotel Transilvania</p>
 
-</footer>
+    </footer>
 
 </body>
 
