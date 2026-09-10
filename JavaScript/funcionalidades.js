@@ -1,5 +1,3 @@
-// FUNCIONALIDAD 1: VALIDAR RESERVA
-
 const formularioReserva = document.getElementById("formularioReserva");
 
 if (formularioReserva) {
@@ -37,8 +35,6 @@ if (formularioReserva) {
     });
 
 }
-
-// FUNCIONALIDAD 2: VALIDAR INICIO DE SESIÓN
 
 const formularioLogin = document.getElementById("formularioLogin");
 
