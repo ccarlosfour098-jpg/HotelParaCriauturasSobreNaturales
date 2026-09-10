@@ -154,3 +154,8 @@
   box-shadow: 0 0 15px #8a2be2;
   transform: translateY(-2px);
 }
+
+.encabezado-principal h1 {
+  text-align: center;
+  margin-top: 100px;
+}
