@@ -2,141 +2,195 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Eventos Internos | Nocturne Sanctuary</title>
+    <title>Eventos | Nocturne Sanctuary</title>
 
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
-
 
 <body>
 
-    <!-- ENCABEZADO -->
-
     <header>
-
-        <h1>NOCTURNE SANCTUARY</h1>
-
-        <!-- Menú de navegación -->
+        <div class="logo">
+            <h1>NOCTURNE SANCTUARY</h1>
+            <p>HOSPITALIDAD ARCANA & CINCO ESTRELLAS</p>
+        </div>
 
         <nav>
-
-            <a href="../../index.html">Inicio</a>
-
-            <a href="Habitaciones.html">Habitaciones</a>
-
-            <a href="Restaurante.html">Restaurante</a>
-
-            <a href="EventosInternos.html">Eventos</a>
-
-            <a href="#">Privacidad</a>
-
+            <a href="../../index.html">Santuarios & Zonas</a>
+            <a href="Habitaciones.html">Cámaras de Linaje</a>
+            <a href="Restaurante.html">Cava de Plasma</a>
+            <a href="EventosInternos.html">Rituales & Eventos</a>
+            <a href="#">La Orden Privada</a>
         </nav>
 
-        <button type="button">Reservar</button>
-
+        <div class="acciones-header">
+            <p>FASE LUNAR: MENGUANTE</p>
+            <button type="button">RESERVAR SANTUARIO</button>
+        </div>
     </header>
-
 
     <main>
 
-        <!-- PRESENTACIÓN PRINCIPAL -->
+        <section class="hero-eventos">
+            <p>EFEMÉRIDES & CEREMONIAL MAYOR</p>
 
-        <section>
-
-            <p>EVENTOS INTERNOS PARA HUÉSPEDES</p>
-
-            <h2>
-                Rituales, Galas y<br>
-                Convocatorias de las Sombras
-            </h2>
+            <h2>Rituales, Galas & <em>Cónclaves Arcanos</em></h2>
 
             <p>
-                Descubre experiencias exclusivas creadas para los huéspedes
-                de Nocturne Sanctuary.
+                Encuentros nocturnos orquestados bajo el amparo de la noche
+                perpetua. Asilo noble garantizado para toda estirpe del abismo
+                bajo el Tratado de las Sombras.
             </p>
 
-
-            <!-- Información del próximo evento -->
-
-            <div>
-
-                <p>PRÓXIMO EVENTO</p>
-
-                <h3>El Gran Baile de Máscaras</h3>
-
-                <p>
-                    Una celebración privada donde criaturas sobrenaturales
-                    se reúnen bajo las sombras de la noche.
-                </p>
-
-                <button type="button">Ver información</button>
-
+            <div class="botones-hero">
+                <a href="#eventos">EXPLORAR EVENTOS</a>
+                <a href="#evento-privado">SOLICITAR CÓNCLAVE</a>
             </div>
-
         </section>
 
+        <section id="eventos" class="seccion-eventos">
+            <div class="titulo-eventos">
+                <p>CALENDARIO DE LA ORDEN</p>
+                <h2>Galas Insignia de la Temporada</h2>
+            </div>
 
-        <!-- EVENTO DESTACADO -->
+            <div class="grid-eventos">
 
-        <section>
+                <article class="tarjeta-evento">
+                    <img src="../../Imagenes/evento_principal.png"
+                        alt="Gran Baile de Máscaras del Eclipse">
 
-            <article>
+                    <div class="contenido-evento">
+                        <p>14 DE NOVIEMBRE · SALÓN DE LOS ESPEJOS</p>
+                        <h3>El Gran Baile de Máscaras del Eclipse</h3>
+                        <p>
+                            Orquesta barroca en clave menor, elixires oscuros
+                            y discreción absoluta entre linajes ancestrales.
+                        </p>
+                        <button type="button">RESERVAR PLAZA</button>
+                    </div>
+                </article>
 
-                <!-- Imagen principal del evento -->
+                <article class="tarjeta-evento">
+                    <img src="../../Imagenes/evento_plasma.png"
+                        alt="Banquete Imperial y Cata de Plasma">
 
-                <div>
+                    <div class="contenido-evento">
+                        <p>NOVILUNIO · CAVA SUBTERRÁNEA</p>
+                        <h3>Banquete Imperial & Cata de Plasma</h3>
+                        <p>
+                            Degustación vertical de plasma biosintético grado
+                            Royal con notas de roble húngaro de los Cárpatos.
+                        </p>
+                        <button type="button">RESERVAR PLAZA</button>
+                    </div>
+                </article>
 
-                    <img
-                        src="../Imagenes/evento-principal.png"
-                        alt="Gran baile de máscaras sobrenatural">
+                <article class="tarjeta-evento">
+                    <img src="../../Imagenes/evento_caza.png"
+                        alt="La Caza Sagrada del Plenilunio">
 
+                    <div class="contenido-evento">
+                        <p>PLENILUNIO · BOSQUE DEL ECLIPSE</p>
+                        <h3>La Caza Sagrada del Plenilunio</h3>
+                        <p>
+                            Carrera libre por la espesura protegida con
+                            salvaguardas rúnicas, sin cazadores ni trazas de plata.
+                        </p>
+                        <button type="button">RESERVAR PLAZA</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta-evento">
+                    <img src="../../Imagenes/evento_espectral.png"
+                        alt="La Gran Séance y Resonancia Espectral">
+
+                    <div class="contenido-evento">
+                        <p>VELO TENUE · CÚPULA DE CRISTAL</p>
+                        <h3>La Gran Séance & Resonancia Espectral</h3>
+                        <p>
+                            Sincronización armónica en frecuencias de 4.5 kHz
+                            para encuentros lúcidos con entidades no corporales.
+                        </p>
+                        <button type="button">RESERVAR PLAZA</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="evento-privado" class="evento-privado">
+            <p>ATENCIÓN CONFIDENCIAL</p>
+            <h2>Solicitar Evento Privado</h2>
+            <p>Reserve un santuario consagrado para su clan o celebración exclusiva.</p>
+
+            <form>
+                <div class="campo-formulario">
+                    <label for="nombre">NOMBRE O CASA ANCESTRAL</label>
+                    <input type="text" id="nombre" name="nombre"
+                        placeholder="Ej. Barón Vladímir de Bathory" required>
                 </div>
 
+                <div class="fila-formulario">
+                    <div class="campo-formulario">
+                        <label for="especie">ESPECIE O LINAJE</label>
 
-                <!-- Información del evento -->
+                        <select id="especie" name="especie" required>
+                            <option value="vampiro">Vampiro</option>
+                            <option value="licantropo">Licántropo</option>
+                            <option value="hechicero">Hechicero</option>
+                            <option value="fantasma">Fantasma</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
 
-                <div>
-
-                    <p>EVENTO DESTACADO</p>
-
-                    <h2>El Gran Baile de Máscaras</h2>
-
-                    <p>
-                        Una noche exclusiva de música, máscaras y encuentros
-                        entre las criaturas más misteriosas del santuario.
-                    </p>
-
-
-                    <!-- Características del evento -->
-
-                    <ul>
-
-                        <li>Acceso exclusivo para huéspedes</li>
-
-                        <li>Vestimenta ceremonial</li>
-
-                        <li>Servicio nocturno especial</li>
-
-                        <li>Evento privado del santuario</li>
-
-                    </ul>
-
-
-                    <button type="button">
-                        Solicitar invitación
-                    </button>
-
+                    <div class="campo-formulario">
+                        <label for="fecha">FECHA DESEADA</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </div>
                 </div>
 
-            </article>
+                <div class="campo-formulario">
+                    <label for="detalles">DETALLES O PETICIONES ESPECIALES</label>
+                    <textarea id="detalles" name="detalles" rows="5"
+                        placeholder="Indique número de asistentes, restricciones de luz o salvaguardas rúnicas requeridas..."
+                        required></textarea>
+                </div>
 
+                <button type="submit">ENVIAR SOLICITUD AL MAESTRO</button>
+            </form>
         </section>
 
     </main>
 
+    <footer>
+        <div class="footer-logo">
+            <h2>NOCTURNE SANCTUARY HOSPITALITY CORP.</h2>
+            <p>
+                Bajo la jurisdicción y salvaguarda irrevocable del Supremo
+                Cónclave de las Sombras.
+            </p>
+            <p>Asilo perpetuo garantizado.</p>
+        </div>
+
+        <nav class="footer-nav">
+            <a href="#">PACTO DE SILENCIO Y PRIVACIDAD</a>
+            <a href="#">CERTIFICACIÓN PLATA CERO</a>
+            <a href="#">GARANTÍA CERO LUX</a>
+            <a href="#">SELLADO RÚNICO DE ESPECTROS</a>
+            <a href="#">CONCIERGE NOCTURNO</a>
+        </nav>
+
+        <div class="copyright">
+            <p>
+                © MMXXIV NOCTURNE SANCTUARY.
+                TODOS LOS DERECHOS ARCÁNOS RESERVADOS.
+            </p>
+        </div>
+    </footer>
 
 </body>
 
