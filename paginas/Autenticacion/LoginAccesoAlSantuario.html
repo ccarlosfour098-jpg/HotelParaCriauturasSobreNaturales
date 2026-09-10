@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
     <h1>Bienvenido al Silencio Perpetuo</h1>
@@ -29,19 +30,20 @@
 
         <section>
             <pre>
-                <form action="../../index.html">
+                <form action="../../index.html" id="formularioLogin">
             
                 <label for="usuario">Identificador de Linaje / Sigilo Criptográfico</label>
-                <input type="text" placeholder="Vampiro Original - Mikaelson">
+                <input type="text" id="usuario" placeholder="Vampiro Original - Mikaelson">
 
                 <label for="contrasena">Clave Rúnica Secreta</label>
-                <input type="text" placeholder="Sangre de la primera noche">
+                <input type="password" id="contrasena" placeholder="Sangre de la primera noche">
 
                 
                 <button type="submit">Franquear las Puertas del Santuario</button>
-                
-            </pre>
 
+                <p id="mensajeLogin"></p>
+                </form>
+            </pre>
         </section>
 
         <a href="/paginas/Autenticacion/RegistroNuevoHuesped.html">¿Nuevo Huesped? Registre su linaje</a>
@@ -78,6 +80,6 @@
     </p>
 
     </footer>
-
+<script src="../../JavaScript/funcionalidades.js"></script>
 </body>
 </html>

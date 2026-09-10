@@ -31,3 +31,10 @@ p {
   margin-bottom: 20px;
   text-shadow: none;
 }
+
+.mensajeReserva {
+  color: var(--color-plateado);
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
