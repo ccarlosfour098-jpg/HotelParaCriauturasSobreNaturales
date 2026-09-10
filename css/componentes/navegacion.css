@@ -9,31 +9,6 @@ nav ul {
   padding: 0;
   margin: 0;
 }
-/*
-
-
-
-*/
-
-header nav ul li {
-  display: inline-block;
-
-}
-
-header nav ul li {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  text-align: center;
-}
-
-header nav ul li:hover {
-  color: var(--color-enlace);
-  text-shadow: 0 0 10px var(--color-enlace);
-}
-
-
 
 nav ul a {
   background-color: rgba(20, 10, 30, 0.85);
@@ -42,7 +17,7 @@ nav ul a {
   border-radius: 6px;
   color: #ffffff;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 
 nav ul a:hover {
@@ -60,9 +35,7 @@ nav ul a:hover {
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
-  transition: all 0.3s ease;
+  cursor: pointer;  
 }
 
 .btn-login {
@@ -75,6 +48,5 @@ nav ul a:hover {
 
 .btn-login:hover, .btn-reserva:hover {
   background: var(--color-enlace);
-  box-shadow: 0 0 15px var(--color-enlace);
   transform: translateY(-2px);
 }
