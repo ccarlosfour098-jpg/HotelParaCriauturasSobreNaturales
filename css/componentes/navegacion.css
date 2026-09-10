@@ -17,7 +17,7 @@ nav ul a {
   border-radius: 6px;
   color: #ffffff;
   font-size: 0.9rem;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; 
 }
 
 nav ul a:hover {
@@ -35,9 +35,7 @@ nav ul a:hover {
   padding: 8px 16px;
   border-radius: 6px;
   font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
-  transition: all 0.3s ease;
+  cursor: pointer;  
 }
 
 .btn-login {
@@ -50,6 +48,9 @@ nav ul a:hover {
 
 .btn-login:hover, .btn-reserva:hover {
   background: var(--color-enlace);
-  box-shadow: 0 0 15px var(--color-enlace);
   transform: translateY(-2px);
+}
+
+.titulo-habitaciones {
+  margin-top: 100px; 
 }

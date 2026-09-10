@@ -1,0 +1,34 @@
+.tarjeta-habitacion {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  gap: 20px;           /* Espacio entre imagen y texto */
+}
+
+/* 2. La imagen de la habitación */
+.tarjeta-habitacion img {
+  width: 45%; 
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--borde-tarjeta);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* 3. El contenedor nuevo que envuelve los textos */
+.info-habitacion {
+  width: 55%;
+  display: flex;
+  flex-direction: column; /* Apila título, párrafos y botón hacia abajo */
+  gap: 10px;              /* Espacio vertical entre los textos */
+}
+
+
+.info-habitacion p, 
+.info-habitacion h2, 
+.info-habitacion h3 {
+  margin: 0; 
+}
+
+
+
+

@@ -24,7 +24,7 @@ main section {
   border-radius: 10px;
   padding: 25px;
   margin-bottom: 25px;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px); /*consultar*/
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
 
@@ -35,7 +35,8 @@ main section h2, main section h3 {
 }
 
 /* Centrado de títulos */
-.tarjeta-evento h3,
+
+.tarjeta-evento h2,
 .tarjeta-pacto h2,
 .santuario-nocturno h2 {
   text-align: center;
@@ -56,7 +57,6 @@ main section h2, main section h3 {
   gap: 20px;
 }
 
-
 .contenido-evento img, 
 .contenido-santuario img, 
 .contenido-instalaciones img {
@@ -74,3 +74,4 @@ main section h2, main section h3 {
   width: 55%;
   margin: 0;
 }
+

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Habitaciones | Nocturne Sanctuary</title>
+    <link rel="stylesheet" href="../../css/style.css" >
 </head>
 
 <body>
@@ -14,19 +15,19 @@
 
     <header>
 
-        <h1>NOCTURNE SANCTUARY</h1>
+        <h1 class="titulo-habitaciones">NOCTURNE SANCTUARY</h1>
 
         <!-- Menú de navegación -->
 
+        
         <nav>
-            <a href="../../index.html">Inicio</a>
-            <a href="Habitaciones.html">Habitaciones</a>
-            <a href="../Restaurante.html">Restaurante</a>
-            <a href="../../EventosInternos.html">Eventos</a>
-            <a href="#">Privacidad</a>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="/paginas/Categorias Residenciales/Restaurante.html">Restaurante gourmet</a></li>
+                <li><a href="/paginas/Categorias Residenciales/EventosInternos.html">Eventos</a></li>
+            </ul>
         </nav>
 
-        <button type="button">Reservar Santuario</button>
 
     </header>
 
@@ -49,17 +50,7 @@
         </section>
 
 
-        <!-- BOTONES PARA ORGANIZAR LAS HABITACIONES -->
-
-        <section>
-
-            <button type="button">Todas</button>
-            <button type="button">Vampiros & Sangre Antigua</button>
-            <button type="button">Licántropos & Clanes Lunares</button>
-            <button type="button">Fantasmales & Espectros</button>
-            <button type="button">Criaturas Acuáticas</button>
-
-        </section>
+               
 
 
         <!-- HABITACIONES DESTACADAS -->
@@ -68,148 +59,107 @@
 
             <!-- Primera habitación -->
 
-            <article>
-
-                <img src="../Imagenes/habitacion1.png"
-                    alt="Habitación Cripta Imperial Obsidiana">
-
-                <p>SUITE IMPERIAL</p>
-
-                <h2>Cripta Imperial Obsidiana</h2>
-
-                <p>
-                    Una residencia ceremonial diseñada para huéspedes que buscan
-                    privacidad absoluta, protección sobrenatural y una estancia
-                    exclusiva dentro del santuario.
-                </p>
-
-                <p>Capacidad: 4 huéspedes</p>
-
-                <p>Ambiente: Oscuro y ceremonial</p>
-
-                <p>Desde $450.000 por noche</p>
-
-                <button type="button">Reservar Cámara</button>
-
-            </article>
+         
+                <div class="tarjeta-habitacion"> 
+                    <img src="../../Imagenes/habitacion1.png" alt="Habitación Cripta Imperial Obsidiana">
+                        
+                    <div class="ingo-habitacion">
+                        <p>SUITE IMPERIAL</p>
+                        <h2>Cripta Imperial Obsidiana</h2>
+                        <p>Una residencia ceremonial diseñada para huéspedes que buscan privacidad absoluta, protección sobrenatural y una estancia exclusiva dentro del santuario.</p>
+                        <p>Capacidad: 4 huéspedes</p>
+                        <p>Ambiente: Oscuro y ceremonial</p>
+                        <p>Desde $450.000 por noche</p>
+                        <button type="button">Reservar</button>
+                    </div>
+                </div>
+        </section>
 
 
             <!-- Segunda habitación -->
 
-            <article>
+            <section>
 
-                <img src="../Imagenes/habitacion2.png"
-                    alt="Habitación Penthouse Luna Llena">
+           
+                <div class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion2.png" alt="Habitación Penthouse Luna Llena">
 
-                <p>SUITE SUPERIOR</p>
-
-                <h2>Penthouse Luna Llena</h2>
-
-                <p>
-                    Una residencia elevada con vistas hacia la noche, espacios
-                    amplios y una atmósfera diseñada para huéspedes que buscan
-                    privacidad absoluta.
-                </p>
-
-                <p>Capacidad: 3 huéspedes</p>
-
-                <p>Vista: Luna y montañas</p>
-
-                <p>Ambiente: Privado y exclusivo</p>
-
-                <p>Desde $320.000 por noche</p>
-
-                <button type="button">Reservar Cámara</button>
-
-            </article>
+                    <div class="info-habitacion">
+                        <p>SUITE SUPERIOR</p>
+                        <h2>Penthouse Luna Llena</h2>
+                        <p>Una residencia elevada con vistas hacia la noche, espacios amplios y una atmósfera diseñada para huéspedes que buscan privacidad absoluta.</p>
+                        <p>Capacidad: 3 huéspedes</p>
+                        <p>Vista: Luna y montañas</p>
+                        <p>Ambiente: Privado y exclusivo</p>
+                        <p>Desde $320.000 por noche</p>
+                        <button type="button">Reservar</button>
+                    </div>
+                </div>
+           
 
         </section>
 
 
         <!-- OTRAS HABITACIONES DISPONIBLES -->
 
-        <section>
+        
 
             <h2>OTRAS CÁMARAS DEL SANTUARIO</h2>
 
 
             <!-- Tercera habitación -->
+            <section>
+          
+                <div class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion3.png" alt="Habitación Cámara de la Bruma Perpetua">
 
-            <article>
-
-                <img src="../Imagenes/habitacion3.png"
-                    alt="Habitación Cámara de la Bruma Perpetua">
-
-                <p>RESIDENCIA ESPECIAL</p>
-
-                <h3>Cámara de la Bruma Perpetua</h3>
-
-                <p>
-                    Una habitación rodeada de misterio y silencio, creada para
-                    huéspedes que buscan descansar lejos de la actividad del santuario.
-                </p>
-
-                <p>Capacidad: 2 huéspedes</p>
-
-                <p>Desde $220.000 por noche</p>
-
-                <button type="button">Reservar</button>
-
-            </article>
+                    <div class="info-habitacion">
+                        <p>RESIDENCIA ESPECIAL</p>
+                        <h3>Cámara de la Bruma Perpetua</h3>
+                        <p>Una habitación rodeada de misterio y silencio, creada para huéspedes que buscan descansar lejos de la actividad del santuario.</p>
+                        <p>Capacidad: 2 huéspedes</p>
+                        <p>Desde $220.000 por noche</p>
+                        <button type="button">Reservar</button>
+                    </div>
+                </div>
+            </section>
 
 
-            <!-- Cuarta habitación -->
+            <section>
 
-            <article>
+                <div class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion4.png" alt="Habitación Lágrima del Mar Negro">
 
-                <img src="../Imagenes/habitacion4.png"
-                    alt="Habitación Lágrima del Mar Negro">
-
-                <p>RESIDENCIA ACUÁTICA</p>
-
-                <h3>Lágrima del Mar Negro</h3>
-
-                <p>
-                    Una estancia inspirada en las profundidades del océano, con
-                    espacios acuáticos, arquitectura ancestral y una conexión
-                    directa con los misterios del mar.
-                </p>
-
-                <p>Capacidad: 2 huéspedes</p>
-
-                <p>Desde $280.000 por noche</p>
-
-                <button type="button">Reservar</button>
-
-            </article>
+                    <div class="info-habitacion">
+                        <p>RESIDENCIA ACUÁTICA</p>
+                        <h3>Lágrima del Mar Negro</h3>
+                        <p>Una estancia inspirada en las profundidades del océano, con espacios acuáticos, arquitectura ancestral y una conexión directa con los misterios del mar.</p>
+                        <p>Capacidad: 2 huéspedes</p>
+                        <p>Desde $280.000 por noche</p>
+                        <button type="button">Reservar</button>
+                    </div>
+                </div>
+            </section>
 
 
             <!-- Quinta habitación -->
 
-            <article>
+            <section>
+                <div class="tarjeta-habitacion">
+                    <img src="../../Imagenes/habitacion5.png" alt="Habitación Atelier de Alquimia y Pócimas">
 
-                <img src="../Imagenes/habitacion5.png"
-                    alt="Habitación Atelier de Alquimia y Pócimas">
+                    <div class="info-habitacion">
+                        <p>ESTANCIA ARCANA</p>
+                        <h3>Atelier de Alquimia & Pócimas</h3>
+                        <p>Un espacio creado para amantes del conocimiento oculto, la alquimia y los rituales nocturnos, rodeado de libros, plantas y elementos mágicos.</p>
+                        <p>Capacidad: 2 huéspedes</p>
+                        <p>Desde $240.000 por noche</p>
+                        <button type="button">Reservar</button>
+                    </div>
+                </div>
+            </section>
 
-                <p>ESTANCIA ARCANA</p>
-
-                <h3>Atelier de Alquimia & Pócimas</h3>
-
-                <p>
-                    Un espacio creado para amantes del conocimiento oculto, la
-                    alquimia y los rituales nocturnos, rodeado de libros,
-                    plantas y elementos mágicos.
-                </p>
-
-                <p>Capacidad: 2 huéspedes</p>
-
-                <p>Desde $240.000 por noche</p>
-
-                <button type="button">Reservar</button>
-
-            </article>
-
-        </section>
+       
 
 
         <!-- SERVICIOS DEL SANTUARIO -->
